@@ -1,6 +1,7 @@
-echo "--Compilazione--"
-gcc main.c -I libs/ -L libs/ -o main 
+echo "--Compilazione e link--"
+gcc main.c libs/lib/*.c -I libs/include -o main
 echo "--Esecuzione--"
-./list1
-echo "--Cacellazione del file compilato--"
-rm list1
+./main
+echo "--Cacellazione del file compilato e dei file libreria--"
+rm main
+echo "--FINE--"

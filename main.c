@@ -1,20 +1,7 @@
 #include <stdio.h>
-#include "sort.h"
-#include "utils.h"
+#include <list.h>
 
-int main_old2() {
-    int arr[] = {3, 5, 1, 9, 6, 7, 8, 45, 12, 97, 98, 74};
-    int size = 12;
-    
-    printArray(arr, size);
-    quickSort(arr, 0, size);
-    printf("\n");
-    printArray(arr, size);
-    printf("\n");
-    
-    return 0;
-}
-
+/*
 List foo(List l1) {
     List out = NULL;
     List tail = NULL;
@@ -62,7 +49,7 @@ List commonValueOrderedList(List l1, List l2) {
 }
 
 int main_old() {
-    /*
+
     int arr1[] = {1, 3, 5, 6, 9, 37};
     int size1 = 6;
     int arr2[] = {2, 3, 7, 9, 17, 22, 37};
@@ -71,7 +58,7 @@ int main_old() {
     List list1 = createListFromArray(arr1, size1);
     List list2 = createListFromArray(arr2, size2);
     printList(commonValueOrderedList(list1, list2));
-    */
+
     
     List l1 = listFromFile("data/uno.txt");
     List l2 = listFromFile("data/due.txt");
@@ -99,6 +86,7 @@ int main_old() {
     printList(somma);
     listToFile(somma, "data/risultato.txt");
 }
+*/
 
 int main() {
     int arr1[] = {1, 3, 5, 6, 9, 37};
